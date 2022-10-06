@@ -1,0 +1,37 @@
+/*Terres fabien & Tremblay Guillaume*/
+/* Divers */
+body{
+    background-image: url(../Images/fond.jpeg);
+    background-size: 25%;
+}
+
+/* Entête avec menu */
+header{
+    border: 2px solid green;
+}
+#aide-icon:hover{
+    border: 3px solid black;
+
+}
+#section-aide{
+    border: 2px solid blueviolet;
+    margin: auto;
+    height: 50%;
+    width: 50%;
+    background-color: khaki;
+    padding: 30px;
+    opacity: 95%;
+    overflow: hidden;
+    display: inherit;
+}
+
+
+/* Contenu principal */
+
+
+
+/* Boite aparté avec les listes */
+
+
+/* Pied de page */
+
