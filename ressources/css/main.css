@@ -30,12 +30,12 @@ body{
     margin: 30px;
     width: 50px;
     position: relative;
-    bottom: 120px;
+    bottom: 90px;
     left: 110px;
 }
 header{
     position: fixed;
-    margin: auto;
+    margin-top: 0px;
     width: 100%;
     background-color: khaki;
     border-top: 3px solid blueviolet;
@@ -48,7 +48,6 @@ header>img{
 
 #menu{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
     margin-left: 5px;
     margin-top: 5px;
     width: 65%;
@@ -60,10 +59,12 @@ header>img{
 #menu li{
     list-style-type: none;
     display: inline;
+    font-size: 40px;
 }
 
 #menu li, #aide-icon{
-    font-family: Georgia, 'Times New Roman', Times, serif;   
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 200%;
 }
 
 #menu a{
@@ -78,11 +79,55 @@ header>img{
 
 
 /* Contenu principal */
-
-
+#contenu-principal{
+    border: 2px solid blue;
+    margin-top: 130px;
+    padding: 50px;
+}
+#contenu-principal p{
+    font-size: 22px;
+}
+#contenu-principal h1{
+    margin-left: 320px;
+    background-color: khaki;
+    border: 2px solid blueviolet;
+    color: brown;
+    position: sticky;
+    top: 150px;
+}
+#contenu-principal img+p::first-letter{
+    color:brown;
+    font-size: 200%;
+    padding-right: 5px;
+    border: 2px solid black;
+}
+#contenu-principal img{
+    float: left;
+    height: 100px;
+    margin: 15px;
+    border: 1px solid black;
+    outline: 5px dotted brown;
+    transition: 0.7s all ease-in;
+}
 
 /* Boite aparté avec les listes */
-
+aside{
+    float: left;
+    width: 250px;
+    height: 800px;
+    border-radius: 20px;
+    background-color: brown;
+    margin: 30px;
+    padding: 10px;
+    color: white;
+    border: 3px solid grey;
+}
 
 /* Pied de page */
-
+footer{
+    background-color: khaki;
+    width: 100%;
+    padding: 5px;
+    position: fixed;
+    bottom: 0px;
+}
