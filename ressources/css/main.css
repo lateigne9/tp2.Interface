@@ -18,7 +18,10 @@ body{
     opacity: 95%;
     overflow: hidden;
     display: none;
-
+    text-transform: lowercase;
+}
+#section-aide>h1{
+    text-transform: uppercase;
 }
 #aide-icon:hover #section-aide{
     display: block;
@@ -31,11 +34,11 @@ body{
     width: 50px;
     position: relative;
     bottom: 90px;
-    left: 110px;
+    left:25%;
 }
 header{
     position: fixed;
-    margin-top: 0px;
+    top: 0px;
     width: 100%;
     background-color: khaki;
     border-top: 3px solid blueviolet;
@@ -53,7 +56,6 @@ header>img{
     width: 65%;
     float: left;
     text-transform: uppercase;/*attention, donne l'heritage a la section aide*/
-    border: 2px solid pink;
     height: 100px;
 }
 #menu li{
@@ -80,7 +82,6 @@ header>img{
 
 /* Contenu principal */
 #contenu-principal{
-    border: 2px solid blue;
     margin-top: 130px;
     padding: 50px;
 }
@@ -93,13 +94,12 @@ header>img{
     border: 2px solid blueviolet;
     color: brown;
     position: sticky;
-    top: 150px;
+    top: 120px;
 }
 #contenu-principal img+p::first-letter{
     color:brown;
     font-size: 200%;
     padding-right: 5px;
-    border: 2px solid black;
 }
 #contenu-principal img{
     float: left;
