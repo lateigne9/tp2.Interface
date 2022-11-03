@@ -18,10 +18,7 @@ body{
     opacity: 95%;
     overflow: hidden;
     display: none;
-    text-transform: lowercase;
-}
-#section-aide>h1{
-    text-transform: uppercase;
+    z-index: 3;
 }
 #aide-icon:hover #section-aide{
     display: block;
@@ -55,24 +52,27 @@ header>img{
     margin-top: 5px;
     width: 65%;
     float: left;
-    text-transform: uppercase;/*attention, donne l'heritage a la section aide*/
+    text-transform: uppercase,inherit;/*attention, donne l'heritage a la section aide*/
     height: 100px;
 }
 #menu li{
     list-style-type: none;
     display: inline;
     font-size: 40px;
+    padding: 20px;
+    margin: 5px;
 }
 
 #menu li, #aide-icon{
     font-family: Georgia, 'Times New Roman', Times, serif; 
     font-size: 200%;
+    text-align: center;
 }
 
 #menu a{
     text-decoration: none;
     color: black;
-    padding: 20px;
+    
 }
 #menu li:hover, #aide-icon:hover{
     border: 2px solid brown;
@@ -95,6 +95,7 @@ header>img{
     color: brown;
     position: sticky;
     top: 120px;
+    z-index: 2;
 }
 #contenu-principal img+p::first-letter{
     color:brown;
